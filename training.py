@@ -94,7 +94,7 @@ training_args = TrainingArguments(
     logging_steps=10,
     evaluation_strategy="steps",
     save_steps=50,
-    fp16=True,  # Allow mixed precision training
+    fp16=True,  # utilize tensor cores for mixed precision training
     report_to='none',  
 )
 
